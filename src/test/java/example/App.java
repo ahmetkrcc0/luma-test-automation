@@ -13,12 +13,9 @@ import org.junit.Before;
 
 public class App
 {
-    public static void main( String[] args )
-    {
-// Detaylandırmak için @after @before komutları yerine manuel start/quit yazılmıştır
 
-    }
-
+    // Detaylandırmak için @after @before komutları yerine manuel start/quit yazılmıştır
+    // Fail olan test en son failed olarak görüntülenecektir.
     @Test
     public void Test1(){
         WebDriver driver = new ChromeDriver();
@@ -124,7 +121,7 @@ public class App
 
 
         WebElement errorMessageElement = driver.findElement(By.className("message-error"));
-        String errorMessage = errorMessageElement.getText();
+
 
 
 
